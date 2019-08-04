@@ -1,0 +1,25 @@
+{
+  "name": "fs-line",
+  "version": "0.0.1",
+  "description": "read file line by line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigLiao/fs-line.git"
+  },
+  "keywords": [
+    "fs-line",
+    "line",
+    "read",
+    "file"
+  ],
+  "author": "BigLiao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigLiao/fs-line/issues"
+  },
+  "homepage": "https://github.com/BigLiao/fs-line#readme"
+}
