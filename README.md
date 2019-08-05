@@ -67,7 +67,7 @@ const fsline = new FsLine();
     separator: '\n',
 }
 ```
-You can change the separator such as `'\r\n'`.
+You can change the separator to such as `'\r\n'`.
 
 ### Event: 'line'
 Emit when a line is read, first argument is the line string, and the second argument is `next` function call to read next line.

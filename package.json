@@ -1,7 +1,7 @@
 {
   "name": "fs-line",
   "version": "0.0.1",
-  "description": "read file line by line",
+  "description": "read and transform file line by line",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,8 @@
     "fs-line",
     "line",
     "read",
-    "file"
+    "file",
+    "transform"
   ],
   "author": "BigLiao",
   "license": "MIT",
