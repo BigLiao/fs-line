@@ -1,6 +1,6 @@
 {
   "name": "fs-line",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "read and transform file line by line",
   "main": "index.js",
   "scripts": {
