@@ -1,7 +1,7 @@
 const fs = require('fs');
 const EventEmitter = require('events');
 
-class FSLine extends EventEmitter {
+class FsLine extends EventEmitter {
     constructor(config) {
         super();
         this.config = Object.assign({
@@ -76,4 +76,4 @@ class FSLine extends EventEmitter {
     }
 }
 
-module.exports = FSLine;
+module.exports = FsLine;
