@@ -29,13 +29,11 @@ class FSLine extends EventEmitter {
             this.readStream.pause();
             const lastLine = this.lineList.length ? this.lineList[0] : '';
             this.lineList = (lastLine + chulk).split(this.config.separator);
-            let previousLine = '';
-            const next = (input) => {
-                const toWrite = input || previousLine;
+            const next = (toWrite) => {
                 this.writeLine(toWrite);
-                previousLine = this.readLine(next);
+                this.readLine(next);
             }
-            previousLine = this.readLine(next);
+            this.readLine(next);
         });
         this.readStream.on('end', () => {
             const lastLine = this.lineList[0];
@@ -63,8 +61,7 @@ class FSLine extends EventEmitter {
         // last item is not a line
         if (this.lineList.length > 1) {
             const line = this.lineList.shift();
-            this.emit('line', line, next);
-            return line;
+            this.emit('line', line, (input=line) => next(input));
         } else {
             this.readStream.resume();
             return null;
