@@ -70,7 +70,7 @@ const fsline = new FsLine();
 You can change the separator such as `'\r\n'`.
 
 ### Event: 'line'
-Emit when a line is readed, first argument is the line string, and the second argument is `next` function call to read next line.
+Emit when a line is read, first argument is the line string, and the second argument is `next` function call to read next line.
 ```javascript
 fsline.on('line', function(line, next) {
     // do some thing...
@@ -86,7 +86,7 @@ fsline.on('line', function(line, next) {
 ```
 
 ### Event: 'end'
-All data is readed.
+All data is read.
 
 ### Method: fsline.open(file)
 Open a file, and begin to read.
